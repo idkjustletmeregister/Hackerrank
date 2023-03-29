@@ -14,7 +14,11 @@ import sys
 #
 
 def birthdayCakeCandles(candles):
-    # Write your code here
+    
+    maxi = max(candles)
+    count = len([i for i in range(0,len(candles)) if candles[i] == maxi])
+    
+    return count
 
 if __name__ == '__main__':
     # fptr = open(os.environ['OUTPUT_PATH'], 'w')
