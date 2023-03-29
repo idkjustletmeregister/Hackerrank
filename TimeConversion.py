@@ -14,15 +14,16 @@ import sys
 #
 
 def timeConversion(s):
-    # Write your code here
+   
 
+    
 if __name__ == '__main__':
-    # fptr = open(os.environ['OUTPUT_PATH'], 'w')
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
     s = input()
 
     result = timeConversion(s)
-    print(result)
-    # fptr.write(result + '\n')
+   
+    fptr.write(result + '\n')
 
-    # fptr.close()
+    fptr.close()
