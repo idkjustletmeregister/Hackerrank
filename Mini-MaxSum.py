@@ -14,16 +14,10 @@ import sys
 
 def miniMaxSum(arr):
     
-    mini, maxi = 0, 0
-    arr = sorted(arr)
+    if len(arr) > 4:
+        arrs = sorted(arr)
+        print(arrs[0]+arrs[1]+arrs[2]+arrs[3], arrs[-4]+arrs[-3]+arrs[-2]+arrs[-1])
     
-    if len(arr) >= 4:  
-        for i in range(0,4):
-            mini += arr[i]
-            maxi += arr[len(arr)-i-1]
-            
-        print(mini, maxi)
-            
     else:
         print(sum(arr), sum(arr))
     
